@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 //Views
 const mainRouter = require('./views/main.router');
-// const productView = require('./views/product.view');
+const photoView = require('./views/photo.view');
 const authView = require('./views/auth.view');
 
 // //Api
@@ -13,5 +13,6 @@ const authApi = require('./api/auth.api');
 router.use('/', mainRouter);
 router.use('/auth', authView);
 router.use('/api/auth', authApi);
+router.use('/photo', photoView)
 
 module.exports = router;
