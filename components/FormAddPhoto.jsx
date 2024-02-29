@@ -12,3 +12,4 @@ function FormAddPhoto() {
 }
 
 module.exports = FormAddPhoto;
+// chingiz, sozdavai vetki

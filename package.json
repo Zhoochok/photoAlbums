@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js -e js,jsx,json"
+    "dev": "nodemon app.js -e js,jsx,json",
+    "dbr": "npx sequelize db:migrate:undo:all && npx sequelize db:migrate && npx sequelize db:seed:all"
   },
   "dependencies": {
     "@babel/core": "^7.23.9",
@@ -15,10 +16,10 @@
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
+    "gitignore": "^0.7.0",
     "jsonwebtoken": "^9.0.2",
     "material-icons": "^1.13.12",
     "materialize-css": "^1.0.0-rc.2",
-    "nodemon": "^3.0.3",
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
@@ -32,7 +33,8 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "nodemon": "^3.1.0"
   },
   "keywords": [],
   "author": "",
